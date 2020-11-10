@@ -1,13 +1,11 @@
 // Mission 1
-function add(number1, number2){
-  return number1+number2
-}
+const add = (nbr1, nbr2) => nbr1 + nbr2;
 
 console.log(add(1,2));
 console.log(add(3,2));
 
 // Mission 2
-function add2(...numbers){
+const add2 = (...numbers) => {
   let total = 0;
   numbers.forEach((number) =>  total += number);
   return total;
