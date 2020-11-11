@@ -20,5 +20,5 @@ const addBorder = (pictureAsArray) => {
     return pictureAsArray;
 }
 
-console.log(addBorder(["abc", "ded"]));
+console.log(addBorder(["hello", "olleh"]));
 console.log(addBorder(['1234','4568']))
