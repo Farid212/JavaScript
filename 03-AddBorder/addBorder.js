@@ -1,12 +1,6 @@
 const addBorder = (pictureAsArray) => {
-    // fingerprint of pics size
-    const lengthOfPicture = pictureAsArray[0].length + 2;
-    // set border as empty string
-    let border = '';
-    // loop through size and add one * for each unit
-    for (let i = 0; i<lengthOfPicture; i++){
-        border = border.concat('*');
-    }
+    const border = '*'.repeat(pictureAsArray[0].length + 2);
+    
     // picture + up border
     pictureAsArray.unshift(border);
     //  picture + bottom border
