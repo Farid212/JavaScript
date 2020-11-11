@@ -1,6 +1,5 @@
-const addTwoDigits = (number) => {
-    const n = number.toString().split('');
-    return parseInt(n[0]) + parseInt(n[1])
+const addTwoDigits = (n) => {
+    return n%10 + Math.floor(n/10);
 }
 
 console.log(addTwoDigits(54))
