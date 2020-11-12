@@ -7,7 +7,7 @@ const adjacentElementsProduct = inputArray => {
     // creation of the production to compare with existing one.
     const product = inputArray[i] * inputArray[i + 1];
     // if the largestProduct is less than product, return product or return largestProduct
-    largestProduct = largestProduct < product ? largestProduct;
+    largestProduct = largestProduct < product ? product : largestProduct;
   }
 
   return largestProduct;
