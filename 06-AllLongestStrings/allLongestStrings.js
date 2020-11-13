@@ -2,13 +2,13 @@ const allLongestStrings = inputArray => {
   let longestLength = 0;
   const longestWords = [];
   
-  inputArray.forEach((string) => {
-    longestLength = longestLength < string.length ? string.length : longestLength;
+  inputArray.forEach(word => {
+    longestLength = longestLength < word.length ? word.length : longestLength;
   });
 
-  inputArray.forEach((string)=>{
-    if (string.length === longestLength){
-      longestWords.push(string)
+  inputArray.forEach(word =>{
+    if (word.length === longestLength){
+      longestWords.push(word)
     }
   })
 
