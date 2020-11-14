@@ -5,7 +5,6 @@ const alphabeticShift = (inputString) =>{
 
     for (let i = 0; i < inputShifted.length; i++) {
         let indexValue = 0;
-        
         if(inputShifted[i] !== 'z'){
             indexValue = alphabet.indexOf(inputShifted[i])+1;
         }
