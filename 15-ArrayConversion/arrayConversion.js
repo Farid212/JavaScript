@@ -1,11 +1,10 @@
 const arrayChange = inputArray => {
     let isOdd = inputArray.length %2 === 0;
 
-    // each iterations will divide array/2
+    // until we get one element
     while(inputArray.length !== 1){
-        console.log(inputArray.length)
+        // each iterations will divide array/2
         inputArray = sumProduct(inputArray, isOdd);
-        console.log(inputArray)
         isOdd = !isOdd;
     }
 
@@ -14,7 +13,6 @@ const arrayChange = inputArray => {
 
 const sumProduct = (numbers, isOdd) => {
     const sumProducts = [];
-
     if (isOdd) {
         for (let i = 0; i< numbers.length; i+=2) {
            sumProducts.push(numbers[i] + numbers[i + 1])
